@@ -6,6 +6,7 @@
   "scripts": {
     "types": "ts-for-gir generate Gtk-3.0 GtkSource-3.0 -e gjs --noNamespace -t commonjs",
     "build": "webpack",
+    "start": "gjs dist/main.js"
   },
   "keywords": [],
   "author": "",
