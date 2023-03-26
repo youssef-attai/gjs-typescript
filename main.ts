@@ -9,6 +9,10 @@ const window = new Gtk.Window({
   default_height: 200,
 });
 
+window.connect("destroy", () => {
+  Gtk.main_quit();
+});
+
 window.show_all();
 
 Gtk.main();
