@@ -9,6 +9,12 @@ const window = new Gtk.Window({
   default_height: 200,
 });
 
+const label = new Gtk.Label({
+  label: "Hello World!",
+});
+
+window.add(label);
+
 window.connect("destroy", () => {
   Gtk.main_quit();
 });
